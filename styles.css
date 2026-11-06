@@ -4,7 +4,7 @@
   --text: #1b2733;
   --muted: #66727e;
   --line: #dfe5ea;
-  --accent: #214a6b;
+  --accent: #2a246f;
 }
 
 * {
@@ -32,40 +32,26 @@ body {
 }
 
 .card {
-  width: min(100%, 680px);
+  width: min(100%, 760px);
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 18px;
-  padding: 56px 42px;
+  padding: 54px 46px;
   text-align: center;
   box-shadow: 0 12px 36px rgba(27, 39, 51, 0.08);
 }
 
-.logo-placeholder {
-  width: 170px;
-  height: 92px;
-  margin: 0 auto 28px;
-  border: 1px dashed #aeb9c3;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  color: var(--accent);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  font-size: 14px;
-}
-
-h1 {
-  margin: 0;
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+.logo {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  margin: 0 auto 30px;
 }
 
 .legal-name {
-  margin: 12px 0 0;
+  margin: 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .divider {
@@ -93,6 +79,7 @@ h1 {
 
 .person {
   font-weight: 700;
+  font-size: 1.08rem;
 }
 
 a {
@@ -107,6 +94,6 @@ a:focus {
 
 @media (max-width: 560px) {
   .card {
-    padding: 42px 24px;
+    padding: 38px 24px;
   }
 }
